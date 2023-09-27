@@ -18,8 +18,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAntiforgery();
-
 // Add my file upload endpoint
 app.MapPost("/upload_many", async (IFormFileCollection myFiles) =>
 {
